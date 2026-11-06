@@ -27,7 +27,7 @@ services:
   service: opentelemetry-collector
   required: true
   links:
-  - name: tempo
+  - name: traces
     service: tempo
   workloads:
   - name: main

@@ -27,7 +27,7 @@ composition for Grafana Tempo.
 | Component / service | Default configuration |
 | --- | --- |
 | Grafana Tempo<br>`tempo` | required; enabled by default; volumes: `data` 20 GB |
-| OpenTelemetry Collector<br>`otel-collector` | required; enabled by default; links: `tempo` → `tempo` |
+| OpenTelemetry Collector<br>`otel-collector` | required; enabled by default; links: `traces` → `tempo` |
 | Grafana<br>`grafana` | optional; enabled by default; volumes: `data` 10 GB; links: `tempo` → `tempo` |
 
 Enabled optional services are selected by default but can be excluded when an
